@@ -1,0 +1,50 @@
+#waiting, #alert_name, #hand_waiting {animation: blink 1200ms alternate infinite;}
+@keyframes blink{
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+
+#chat_all{position:absolute;left:300px;top:0px;}
+#chat_but{position:absolute;top:0px;width:330px;}
+#chat_glob,#chat_game{float: left;width:10em;text-align:center;border:2px solid #000000;border-radius:5px;box-shadow:0 0 0 60px rgb(0 0 0 / 0%) inset, 0.1em 0.1em 0.2em #000;background:#eee;cursor:pointer}
+#chat{display:none;position:absolute;left:0px;top:50px;width:325px;height:500px;border:2px solid #000;border-radius:5px;overflow:auto;background:white;}
+#form_mess{position:absolute;padding:2px;top:0.1%;width:98.5%}
+#inp_mess{width:76%;margin-right:-1%;border:1px solid #000;border-radius:3px;}
+#chat_mess_glob,#chat_mess_game{display: flex; flex-wrap:wrap-reverse;margin-top:10%}
+P.mess{margin-left:1%;margin-top: 1%;margin-bottom:1%;background:#eee;word-break:break-all;width:100%}
+#clear_mess{border:1px solid #0000008c;border-radius:50%;padding:0px 3px 1.5px;margin-left:-2px;background:#efefef;cursor:pointer}
+#clear_mess:active {background:red}
+
+#join_window,#online_now,#stat_u,#help_u{position:absolute;top:50px;max-width:600px;border:2px solid #000;border-radius:5px;overflow:auto;background-color:white;max-height:400px}
+#join_window{left:10px;display:none}
+#online_now{right:10px}
+#stat_u{left:390px;max-height: 500px;width: 300px;}
+#help_u{left:390px}
+#stat_u>button,#stat_u>P,#help_u>button,#help_u>P{margin: 5px;font-weight: bold}
+#stat_u>P>strong{display: inline-block; width: 140px;}
+#stat_u>P>span{display: inline-block; width: 25px;}
+.join_el{margin-left:5px;margin-right:5px;white-space:pre;background:#eee;cursor:pointer}
+.join_el>SPAN{border:2px solid #000000;border-radius:5px;box-shadow:0 0 0 60px rgb(0 0 0 / 0%) inset,0.1em 0.1em 0.2em #000;background:#eee;padding:3px;}
+.join_el>SPAN:active {background:red}
+
+#pass_inf{position:absolute;background-color:#DCDCDC;left:10px;bottom:10px;width:500px;height:230px;border:3px solid #000;z-index:3}
+#pass_inf>P,#pass_inf>input{margin-left:10px}
+
+#trade_desk>ul>li>button{font-size:20px;height:35px;}
+#wist_desk,#light_dark{position:absolute;left:400px;bottom:300px}
+#wist_desk>ul>li>button,#light_dark>ul>li>button{width:200px;font-size:20px}
+ul{list-style-type:none}
+
+#trump1_id,#trump2_id,#trump3_id{color:black}
+#pass_inf>button,#pass_inf>input,#trump2_id,#trump3_id,#waiting,#look_pass,#trick2,#trick3,#sec_player,#third_player,#but_name,#join_game,#input_name{float:left}
+
+#hand_waiting,#ev_wait{position:absolute;bottom:160px;font-size:20px}
+
+#controls{position: absolute; right: 10px; bottom: 10px;max-width: max-content; max-height: max-content;}
+#controls>#contr_b>P{margin: 5px}
+
+
+
+
+
+
