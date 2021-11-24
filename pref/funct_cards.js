@@ -344,6 +344,8 @@ let w=(document.documentElement.clientWidth-20),h= (document.documentElement.cli
 		id_all_symbols.forEach(i=>{document.getElementById(i).setAttribute("viewBox",s)})
 }
 
+function reload(){window.location.reload(true)}
+
 const initial_window = `<div id="pass_inf">
 <p>Если один из игроков отключится, за него продолжит играть Бот. Решите, сколько секунд потребуется на раздумья, пока Бот не начнет ходить. Игрок всегда сможет перехватить управление.</p>
 <p><label for="s">Думаем в секундах до: </label><input style="width:100px" value="20" type="number" name="s" id="seconds" oninput="check_n(this)"/></p>
