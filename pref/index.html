@@ -13,17 +13,18 @@
 		<div id="main_div" style="position: absolute; border: 3px solid #000; border-radius: 10px">
 			<div id="controls">
 				<div id="contr_b">
+					<p><button onclick="reload()">Обновить</button></p>
 					<p><button onclick="visitors_look(this)">Сейчас онлайн:<span id="qty_vis"></span></button></p>
 					<p><button onclick="pulya_look(this)">Посмотреть пулю</button></p>
 					<p><button onclick="statistic(this)">Статистика</button></p>
 					<p><button onclick="help()">Что делать?</button></p>
-					<p><button onclick="reload()">Обновить</button></p>
+					<p><a href="https://diod.tk/pref/terms.html">Terms & Conditions</a></p>
 				</div>
 			</div>
-			<div style="position: absolute; left: 10px; top: -10px">							
+			<div style="position: absolute; left: 10px; top: -10px">
 				<p id = "sec_player">Второй игрок пока отсутствует</p>
 			</div>
-			<div style="position: absolute; right: 10px; top: -10px">							
+			<div style="position: absolute; right: 10px; top: -10px">
 				<p id = "third_player">Третий игрок пока отсутствует</p>
 			</div>
 			<div style="position: absolute; left: 10px; bottom: 10px">	
@@ -74,20 +75,20 @@
 						<text id="pulya_r" transform="rotate(-90)" x="-428" y="562" onclick="full_text(this)">4.6.8.12.14.16.22.528.636.414.789.985</text>
 						<text id="vist_rl" transform="rotate(-90)" x="-500" y="615" onclick="full_text(this)">4.6.8.12.14.16.22.856.789.5</text>
 						<text id="vist_rr" transform="rotate(-90)" x="-213" y="615" onclick="full_text(this)">4.6.8.12.14.16.2</text>
-					</g>					
+					</g>
 				</svg>
-			</div>			
+			</div>
 			
 			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="new_brick" width="1200" height="800">
 				<symbol id="back_card" viewBox="0 0 1200 800" preserveAspectRatio="xMinYMid">
 					<defs>
 						<pattern id="star" viewBox="0,0,10,10" width="20%" height="20%">
-							<polygon points="0,0 2,5 0,10 5,8 10,10 8,5 10,0 5,2" fill="white" stroke="#123173ff"/>						
+							<polygon points="0,0 2,5 0,10 5,8 10,10 8,5 10,0 5,2" fill="white" stroke="#123173ff"/>
 						</pattern>
 					</defs>
 					<rect x="10" y="10" width="69" height="106" rx="3.5" ry="3.3" fill="white" stroke="#000" stroke-miterlimit="3"/>
 					<rect x="13" y="13" width="63" height="100" rx="3.5" ry="3.3" fill="url(#star)" stroke="#000" stroke-miterlimit="3"/>
-				</symbol>					
+				</symbol>
 				<symbol id="7_Clubs"  viewBox="0 0 1200 600" preserveAspectRatio="xMinYMid">
 					<rect x="10" y="8.2" width="69" height="106" rx="3.5" ry="3.3" fill="#fff" stroke="#000" stroke-miterlimit="3"/>  
 					<path d="m20 42c0.081 3.8 0.89 4 1.6 5.6h-4.2c0.73-1.6 1.5-1.9 1.6-5.6a0.16 0.16 0 0 0-0.32 0 3.4 3.4 0 1 1-1.2-3.2 0.16 0.16 0 0 0 0.23-0.23 3.7 3.7 0 1 1 3.5 0 0.16 0.16 0 0 0 0.23 0.23 3.4 3.4 0 1 1-1.2 3.2 0.16 0.16 0 0 0-0.32 0z" stroke-width=".016"/>
@@ -96,8 +97,8 @@
 						<path d="m15 14v-2.7h7.5c-1.9 4.9-5.1 11-5.1 17" stroke-width="2"/>
 						<path d="m72 108v2.7h-7.5c1.9-4.9 5.1-11 5.1-17" stroke-width="2"/>
 						<path d="m37 43v-7.7h22c-5.4 14-15 31-15 51" stroke-width="5.8"/>
-					</g>			
-				</symbol>					
+					</g>
+				</symbol>
 				<symbol id="7_diamonds"  viewBox="0 0 1200 600" preserveAspectRatio="xMinYMid">
 					<rect x="10" y="8.2" width="69" height="106" rx="3.5" ry="3.3" fill="#fff" stroke="#000" stroke-miterlimit="3"/>
 					<path d="m11 39c1.5-0.6 6.6-7.2 6.9-8.4 0.61 1.8 5.9 8.1 6.9 8.4-1.3 0.53-6.4 7-6.9 8.4-0.57-1.5-5.6-7.9-6.9-8.4" fill="#f00" stroke-width=".58"/>
@@ -107,7 +108,7 @@
 						<path d="m72 108v2.7h-7.5c1.9-4.9 5.1-11 5.1-17" stroke-width="2"/>
 						<path d="m37 43v-7.7h22c-5.4 14-15 31-15 51" stroke-width="5.8"/>
 					</g>
-				</symbol>					
+				</symbol>
 				<symbol id="7_Hearts" viewBox="0 0 1200 600" preserveAspectRatio="xMinYMid">
 					<rect x="10" y="8.2" width="69" height="106" rx="3.5" ry="3.3" fill="#fff" stroke="#000" stroke-miterlimit="3"/>
 					<path d="m18 35c0-1.4 1.4-2.8 2.8-2.8s2.8 1.4 2.8 3.5c0 3.5-5.6 9.1-5.6 10 0-1.4-5.6-7-5.6-10 0-2.1 1.4-3.5 2.8-3.5s2.8 1.4 2.8 2.8z" fill="#f00" stroke-width=".014"/>
@@ -117,7 +118,7 @@
 						<path d="m72 108v2.7h-7.5c1.9-4.9 5.1-11 5.1-17" stroke-width="2"/>
 						<path d="m37 43v-7.7h22c-5.4 14-15 31-15 51" stroke-width="5.8"/>
 					</g>
-				</symbol>					
+				</symbol>
 				<symbol id="7_Spades" viewBox="0 0 1200 600" preserveAspectRatio="xMinYMid">
 					<rect x="10" y="8.2" width="69" height="106" rx="3.5" ry="3.3" fill="#fff" stroke="#000" stroke-miterlimit="3"/>  
 					<path d="m19 33c2 4.4 7 7.1 7 12a3 2.7 0 0 1-5.9 0 0.2 0.18 0 0 0-0.4 0c0 3.6 0.99 3.8 1.9 5.6h-5.1c0.89-1.8 1.9-2 1.9-5.6a0.2 0.18 0 0 0-0.4 0 3 2.7 0 0 1-5.9 0c0-5.1 5-7.7 7-12z" stroke-width=".019"/>
@@ -166,8 +167,8 @@
 						<path d="m18 19a2.8 4.1 0 1 1 0.028 0h-0.028a3.5 5.1 0 1 0 0.028 0z" stroke-width="2"/>
 						<path d="m69 103a2.8 4.1 0 1 0 0.028 0h-0.028a3.5 5.1 0 1 1 0.028 0z" stroke-width="2"/>
 						<path d="m44 54a8.3 12 0 1 1 0.081 0h-0.081a10 15 0 1 0 0.081 0z" stroke-width="5.8"/>
-					</g>				
-				</symbol>				
+					</g>
+				</symbol>
 				<symbol id="9_Clubs"  viewBox="0 0 1200 600" preserveAspectRatio="xMinYMid">
 					<rect x="10" y="8.2" width="69" height="106" rx="3.5" ry="3.3" fill="#fff" stroke="#000" stroke-miterlimit="3"/>  
 					<g fill="none" stroke="#000">
@@ -177,7 +178,7 @@
 					</g>
 					<path d="m20 42c0.081 3.8 0.89 4 1.6 5.6h-4.2c0.73-1.6 1.5-1.9 1.6-5.6a0.16 0.16 0 0 0-0.32 0 3.4 3.4 0 1 1-1.2-3.2 0.16 0.16 0 0 0 0.23-0.23 3.7 3.7 0 1 1 3.5 0 0.16 0.16 0 0 0 0.23 0.23 3.4 3.4 0 1 1-1.2 3.2 0.16 0.16 0 0 0-0.32 0z" stroke-width=".016"/>
 					<path d="m69 79c0.081-3.8 0.89-4 1.6-5.6h-4.2c0.73 1.6 1.5 1.9 1.6 5.6a0.16 0.16 0 0 1-0.32 0 3.4 3.4 0 1 0-1.2 3.2 0.16 0.16 0 0 1 0.23 0.23 3.7 3.7 0 1 0 3.5 0 0.16 0.16 0 0 1 0.23-0.23 3.4 3.4 0 1 0-1.2-3.2 0.16 0.16 0 0 1-0.32 0z" stroke-width=".016"/>			
-				</symbol>					
+				</symbol>
 				<symbol id="9_diamonds"  viewBox="0 0 1200 600" preserveAspectRatio="xMinYMid">
 					<rect x="10" y="8.2" width="69" height="106" rx="3.5" ry="3.3" fill="#fff" stroke="#000" stroke-miterlimit="3"/>
 					<path d="m11 39c1.5-0.6 6.6-7.2 6.9-8.4 0.61 1.8 5.9 8.1 6.9 8.4-1.3 0.53-6.4 7-6.9 8.4-0.57-1.5-5.6-7.9-6.9-8.4" fill="#f00" stroke-width=".58"/>
@@ -187,7 +188,7 @@
 						<path d="m65 104a4.7 4.7 0 0 1 9.3 0v2a4.7 4.7 0 0 1-9.3 0v-7.8a4.7 4.7 0 0 1 4.7-4.7c2.8 0 3.4 1.1 3.7 1.6" stroke-width="2"/>
 						<path d="m58 51a13 13 0 0 1-25 0v-5.6a13 13 0 0 1 25 0v21a13 13 0 0 1-13 13c-7.6 0-9.2-3.1-10-4.3" stroke-width="5.5"/>
 					</g>
-				</symbol>					
+				</symbol>
 				<symbol id="9_Hearts" viewBox="0 0 1200 600" preserveAspectRatio="xMinYMid">
 					<rect x="10" y="8.2" width="69" height="106" rx="3.5" ry="3.3" fill="#fff" stroke="#000" stroke-miterlimit="3"/>  
 					<g fill="none" stroke="#f00">
@@ -197,7 +198,7 @@
 					</g>
 					<path d="m18 35c0-1.4 1.4-2.8 2.8-2.8s2.8 1.4 2.8 3.5c0 3.5-5.6 9.1-5.6 10 0-1.4-5.6-7-5.6-10 0-2.1 1.4-3.5 2.8-3.5s2.8 1.4 2.8 2.8z" fill="#f00" stroke-width=".014"/>
 					<path d="m68 86c0 1.4 1.4 2.8 2.8 2.8s2.8-1.4 2.8-3.5c0-3.5-5.6-9.1-5.6-10 0 1.4-5.6 7-5.6 10 0 2.1 1.4 3.5 2.8 3.5s2.8-1.4 2.8-2.8z" fill="#f00" stroke-width=".014"/>
-				</symbol>					
+				</symbol>
 				<symbol id="9_Spades" viewBox="0 0 1200 600" preserveAspectRatio="xMinYMid">
 					<rect x="10" y="8.2" width="69" height="106" rx="3.5" ry="3.3" fill="#fff" stroke="#000" stroke-miterlimit="3"/>  
 					<g fill="none" stroke="#000">
@@ -272,8 +273,8 @@
 						<path d="m12 28h3.3m-1.9-0.19 4.2-17 4.2 17m-1.9 0.19h3.3m-8.1-6.3h5" stroke-width="2"/>
 						<path d="m74 95h-3.3m1.9 0.19-4.2 17-4.2-17m1.9-0.19h-3.3m8.1 6.3h-5" stroke-width="2"/>
 						<path d="m25 78h8.3m-4.7-0.48 11-43 10 43m-4.7 0.48h8.3m-20-16h12" stroke-width="5"/>
-					</g>			
-				</symbol>					
+					</g>
+				</symbol>
 				<symbol id="A_diamonds"  viewBox="0 0 1200 600" preserveAspectRatio="xMinYMid">
 					<rect x="10" y="8.2" width="69" height="106" rx="3.5" ry="3.3" fill="#fff" stroke="#000" stroke-miterlimit="3"/>
 					<path d="m11 39c1.5-0.6 6.6-7.2 6.9-8.4 0.61 1.8 5.9 8.1 6.9 8.4-1.3 0.53-6.4 7-6.9 8.4-0.57-1.5-5.6-7.9-6.9-8.4" fill="#f00" stroke-width=".58"/>
@@ -283,7 +284,7 @@
 						<path d="m74 95h-3.3m1.9 0.19-4.2 17-4.2-17m1.9-0.19h-3.3m8.1 6.3h-5" stroke-width="2"/>
 						<path d="m31 78h8.3m-4.7-0.48 11-43 10 43m-4.7 0.48h8.3m-20-16h12" stroke-width="5"/>
 					</g>
-				</symbol>					
+				</symbol>
 				<symbol id="A_Hearts" viewBox="0 0 1200 600" preserveAspectRatio="xMinYMid">
 					<rect x="10" y="8.2" width="69" height="106" rx="3.5" ry="3.3" fill="#fff" stroke="#000" stroke-miterlimit="3"/>
 					<path d="m18 35c0-1.4 1.4-2.8 2.8-2.8s2.8 1.4 2.8 3.5c0 3.5-5.6 9.1-5.6 10 0-1.4-5.6-7-5.6-10 0-2.1 1.4-3.5 2.8-3.5s2.8 1.4 2.8 2.8z" fill="#f00" stroke-width=".014"/>
@@ -293,7 +294,7 @@
 						<path d="m74 95h-3.3m1.9 0.19-4.2 17-4.2-17m1.9-0.19h-3.3m8.1 6.3h-5" stroke-width="2"/>
 						<path d="m31 78h8.3m-4.7-0.48 11-43 10 43m-4.7 0.48h8.3m-20-16h12" stroke-width="5"/>
 					</g>
-				</symbol>					
+				</symbol>
 				<symbol id="A_Spades" viewBox="0 0 1200 600" preserveAspectRatio="xMinYMid">
 					<rect x="10" y="8.2" width="69" height="106" rx="3.5" ry="3.3" fill="#fff" stroke="#000" stroke-miterlimit="3"/>
 					<path d="m19 33c2 4.4 7 7.1 7 12a3 2.7 0 0 1-5.9 0 0.2 0.18 0 0 0-0.4 0c0 3.6 0.99 3.8 1.9 5.6h-5.1c0.89-1.8 1.9-2 1.9-5.6a0.2 0.18 0 0 0-0.4 0 3 2.7 0 0 1-5.9 0c0-5.1 5-7.7 7-12z" stroke-width=".019"/>
@@ -335,7 +336,7 @@
 					<path d="m18 13h3.2m-1.6 0v12a3.2 3.3 0 0 1-6.5 0v-0.49" fill="none" stroke="#000" stroke-linecap="square" stroke-miterlimit="1.5" stroke-width="2"/>
 					<path d="m68 110h-3m1.5 0v-11a3 3 0 0 1 5.9 0v0.45" fill="none" stroke="#000" stroke-linecap="square" stroke-miterlimit="1.5" stroke-width="2"/>
 					<path d="m47 38h9m-4.5 0v33a9 9.2 0 0 1-18 0v-1.4" fill="none" stroke="#000" stroke-linecap="square" stroke-miterlimit="1.5" stroke-width="3.6"/>
-				</symbol>				
+				</symbol>
 				<symbol id="K_Clubs"  viewBox="0 0 1200 600" preserveAspectRatio="xMinYMid">
 					<rect x="10" y="8.2" width="69" height="106" rx="3.5" ry="3.3" fill="#fff" stroke="#000" stroke-miterlimit="3" stroke-width="1"/>
 					<path d="m20 42c0.081 3.8 0.89 4 1.6 5.6h-4.2c0.73-1.6 1.5-1.9 1.6-5.6a0.16 0.16 0 0 0-0.32 0 3.4 3.4 0 1 1-1.2-3.2 0.16 0.16 0 0 0 0.23-0.23 3.7 3.7 0 1 1 3.5 0 0.16 0.16 0 0 0 0.23 0.23 3.4 3.4 0 1 1-1.2 3.2 0.16 0.16 0 0 0-0.32 0z" stroke-width=".016"/>
@@ -344,8 +345,8 @@
 						<path d="m13 12h3.4m-1.7 0v16m-1.7 0h3.4m2.9-16h3.4m-1.7 0.34-6 10m4.3 5.2h3.4m-1.7-0.34-3.3-8.7" stroke-width="2"/>
 						<path d="m74 111h-3.4m1.7 0v-16m1.7 0h-3.4m-2.9 16h-3.4m1.7-0.34 6-10m-4.3-5.2h-3.4m1.7 0.34 3.3 8.7" stroke-width="2"/>
 						<path d="m32 36h9m-4.5 0v41m-4.5 0h9m7.6-41h9m-4.5 0.9-16 27m11 14h9m-4.5-0.9-8.8-23" stroke-width="5.3"/>
-					</g>		
-				</symbol>					
+					</g>
+				</symbol>
 				<symbol id="K_diamonds"  viewBox="0 0 1200 600" preserveAspectRatio="xMinYMid">
 					<rect x="10" y="8.2" width="69" height="106" rx="3.5" ry="3.3" fill="#fff" stroke="#000" stroke-miterlimit="3" stroke-width="1"/>
 					<path d="m11 39c1.5-0.6 6.6-7.2 6.9-8.4 0.61 1.8 5.9 8.1 6.9 8.4-1.3 0.53-6.4 7-6.9 8.4-0.57-1.5-5.6-7.9-6.9-8.4" fill="#f00" stroke-width=".58"/>
@@ -355,7 +356,7 @@
 						<path d="m74 111h-3.4m1.7 0v-16m1.7 0h-3.4m-2.9 16h-3.4m1.7-0.34 6-10m-4.3-5.2h-3.4m1.7 0.34 3.3 8.7" stroke-width="2"/>
 						<path d="m32 36h9m-4.5 0v41m-4.5 0h9m7.6-41h9m-4.5 0.9-16 27m11 14h9m-4.5-0.9-8.8-23" stroke-width="5.3"/>
 					</g>
-				</symbol>					
+				</symbol>
 				<symbol id="K_Hearts" viewBox="0 0 1200 600" preserveAspectRatio="xMinYMid">
 					<rect x="10" y="8.2" width="69" height="106" rx="3.5" ry="3.3" fill="#fff" stroke="#000" stroke-miterlimit="3" stroke-width="1"/>
 					<path d="m18 35c0-1.4 1.4-2.8 2.8-2.8s2.8 1.4 2.8 3.5c0 3.5-5.6 9.1-5.6 10 0-1.4-5.6-7-5.6-10 0-2.1 1.4-3.5 2.8-3.5s2.8 1.4 2.8 2.8z" fill="#f00" stroke-width=".014"/>
@@ -365,7 +366,7 @@
 						<path d="m74 111h-3.4m1.7 0v-16m1.7 0h-3.4m-2.9 16h-3.4m1.7-0.34 6-10m-4.3-5.2h-3.4m1.7 0.34 3.3 8.7" stroke-width="2"/>
 						<path d="m32 36h9m-4.5 0v41m-4.5 0h9m7.6-41h9m-4.5 0.9-16 27m11 14h9m-4.5-0.9-8.8-23" stroke-width="5.3"/>
 					</g>
-				</symbol>					
+				</symbol>
 				<symbol id="K_Spades" viewBox="0 0 1200 600" preserveAspectRatio="xMinYMid">
 					<rect x="10" y="8.2" width="69" height="106" rx="3.5" ry="3.3" fill="#fff" stroke="#000" stroke-miterlimit="3" stroke-width="1"/>
 					<path d="m19 33c2 4.4 7 7.1 7 12a3 2.7 0 0 1-5.9 0 0.2 0.18 0 0 0-0.4 0c0 3.6 0.99 3.8 1.9 5.6h-5.1c0.89-1.8 1.9-2 1.9-5.6a0.2 0.18 0 0 0-0.4 0 3 2.7 0 0 1-5.9 0c0-5.1 5-7.7 7-12z" stroke-width=".019"/>
@@ -426,7 +427,7 @@
 				<p onclick="chat_en_dis(this)" id="chat_glob">Общий чат</p>
 				<p onclick="chat_en_dis(this)" id="chat_game">Игровой чат</p>
 			</div>	
-			<div id="chat">			
+			<div id="chat">
 				<form id = "form_mess">
 					<input id="inp_mess" autocomplete="off"/>
 					<button id="but_mess">Send</button>
@@ -444,4 +445,4 @@
 		<script src="/pref/check_in_cards.js"></script>
 		
 	</body>
-</html>																																	
+</html>
