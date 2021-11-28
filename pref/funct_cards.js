@@ -69,6 +69,12 @@ const stat_user=`<div id="stat_u">
 <p><strong class="strng">Мизер играл: </strong><span id="miserg_all"></span> Выиграл: <span id="miserg_win"></span></p>
 <p><strong class="strng">Мизер пасовал: </strong><span id="miserp_all"></span> Выиграл: <span id="miserp_win"></span></p>
 <p><button id = "close_stat"  onclick="close_st('stat_u')">Закрыть окно</button></p>
+</div>`,
+
+policy_user = `<div id="policy_us">
+<p>Нажимая на кнопку "Запомнить мое имя", я даю согласие на обработку персональных данных,</p>
+<p>а также соглашаюсь с <a href="https://diod.tk/pref/terms.html">Политикой конфиденциальности</a>,</p>
+<p>и присоединяюсь к <a href="https://diod.tk/pref/policy.html">Пользовательскому соглашению</a></p>
 </div>`
 
 function select_name(e){let names=online_now.querySelectorAll('p')	
