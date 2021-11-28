@@ -40,7 +40,8 @@ ul{list-style-type:none}
 
 #hand_waiting,#ev_wait{position:absolute;bottom:160px;font-size:20px}
 
-#controls{position: absolute; right: 10px; bottom: 10px;max-width: max-content; max-height: max-content;}
+#controls{position: absolute; right: 10px; bottom: 10px;max-width: max-content; max-height: max-content}
+#contr_b{display:none}
 #controls>#contr_b>P{margin: 5px}
 
 

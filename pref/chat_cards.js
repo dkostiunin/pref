@@ -33,7 +33,8 @@ document.getElementById('form_mess').addEventListener('submit', function(e){
 })
 
 const ch_b=document.getElementById('chat_but'),ch_all=document.getElementById('chat_all'),
-controls_b=document.getElementById('controls'),c_b=document.getElementById('contr_b')
+controls_b=document.getElementById('hide_show_b'),c_b=document.getElementById('controls')
+
 function handler_m(e){change(ch_all,e.pageX,e.pageY)}
 function handler_t(e){change(ch_all,e.changedTouches[0].pageX,e.changedTouches[0].pageY)}
 function change(el,x,y){el.style.left=(x-165)+'px';el.style.top=(y-30)+'px'}
@@ -42,10 +43,10 @@ ch_b.addEventListener('mouseup',e=>{document.removeEventListener('mousemove',han
 ch_b.addEventListener('touchstart',e=>{document.addEventListener('touchmove',handler_t)})
 ch_b.addEventListener('touchend',e=>{document.removeEventListener('touchmove',handler_t)})
 
-function handler_m1(e){change1(controls_b,e.pageX,e.pageY)}
-function handler_t1(e){change1(controls_b,e.changedTouches[0].pageX,e.changedTouches[0].pageY)}
-function change1(el,x,y){el.style.left=(x-50)+'px';el.style.top=(y-50)+'px'}
-contr_b.addEventListener('mousedown',e=>{document.addEventListener('mousemove',handler_m1)})
-contr_b.addEventListener('mouseup',e=>{document.removeEventListener('mousemove',handler_m1)})
-contr_b.addEventListener('touchstart',e=>{document.addEventListener('touchmove',handler_t1)})
-contr_b.addEventListener('touchend',e=>{document.removeEventListener('touchmove',handler_t1)})
+function handler_m1(e){change1(c_b,e.pageX,e.pageY)}
+function handler_t1(e){change1(c_b,e.changedTouches[0].pageX,e.changedTouches[0].pageY)}
+function change1(el,x,y){el.style.left=(x-30)+'px';el.style.top=(y-30)+'px'}
+controls_b.addEventListener('mousedown',e=>{document.addEventListener('mousemove',handler_m1)})
+c_b.addEventListener('mouseup',e=>{document.removeEventListener('mousemove',handler_m1)})
+controls_b.addEventListener('touchstart',e=>{document.addEventListener('touchmove',handler_t1)})
+c_b.addEventListener('touchend',e=>{document.removeEventListener('touchmove',handler_t1)})

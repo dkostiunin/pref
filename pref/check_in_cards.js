@@ -27,6 +27,7 @@ socket.on('check_in', function(games,players,user){
 	let p1=document.getElementById('input_name'),butt=document.getElementById('join_game'), but_name=document.getElementById('but_name')
 	if ((games==='Запомнить мое имя'||games==='Ввести пароль')&&players!=='enter_pass'){
 		let p=document.getElementById('pass_inf');if(p){p.remove()};
+		let d=document.getElementById('policy_us');if(d){d.remove()};
 		document.cookie = 'user='+p1.value+'; max-age='+31536000; document.cookie = 'pswd='+user+'; max-age='+31536000;
 		but_name.textContent='Сменить свое имя'
 		let w=document.getElementById('waiting');if(w){w.remove()};let l_pass=document.getElementById('look_pass')
