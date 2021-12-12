@@ -73,8 +73,8 @@ const stat_user=`<div id="stat_u">
 
 policy_user = `<div id="policy_us">
 <p>Нажимая на кнопку "Запомнить мое имя", я даю согласие на обработку персональных данных,</p>
-<p>а также соглашаюсь с <a href="https://diod.tk/pref/terms.html">Политикой конфиденциальности</a>,</p>
-<p>и присоединяюсь к <a href="https://diod.tk/pref/policy.html">Пользовательскому соглашению</a></p>
+<p>а также соглашаюсь с <a href="https://pref-sochi.herokuapp.com/pref/terms.html">Политикой конфиденциальности</a>,</p>
+<p>и присоединяюсь к <a href="https://pref-sochi.herokuapp.com/pref/policy.html">Пользовательскому соглашению</a></p>
 </div>`
 
 function select_name(e){let names=online_now.querySelectorAll('p')	
@@ -270,7 +270,7 @@ function select_cards(el){let ev = document.getElementById('ev_wait')
 		}
 		else if(sel.length===1&&el.id!==sel[0][0]){let old_el=document.getElementById(sel[0][0]);
 			old_el.width.baseVal.value=sel[0][1];old_el.height.baseVal.value=sel[0][2];sel = [];change_size(el, sel)
-		} 		
+		}
 	}
 }
 
@@ -340,7 +340,10 @@ function j_game(el){//нажатие кнопки присоединиться �
 			else if(el.textContent==='Закончить игру'){socket.emit('join',[name.value,el.textContent])}		
 		}
 	}
-	else{but_n.insertAdjacentHTML('afterend','<p style="margin-block-start:-1px;margin-inline-start:10px"id="waiting">Перед началом игры придумайте себе имя</p>')}
+	else{
+		but_n.insertAdjacentHTML('afterend','<p style="margin-block-start:-1px;margin-inline-start:10px"id="waiting">Перед началом игры придумайте себе имя</p>')
+		setTimeout(()=>{let c=document.getElementById('waiting');if(c){c.remove()}},2000)
+	}
 }
 
 function change_size_window(){

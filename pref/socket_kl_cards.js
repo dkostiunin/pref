@@ -12,7 +12,10 @@ document.addEventListener('DOMContentLoaded', function(e){//	при загруз
 		but_name.insertAdjacentHTML('afterend','<button id="look_pass" onclick="look_pas()">Посмотреть пароль</button>')
 		name.value=n_c;socket.emit('open_page', name.value)
 	}
-	else{butt.insertAdjacentHTML('afterend',policy_user)}
+	else{
+		butt.insertAdjacentHTML('afterend',policy_user)
+		chat_all.style.display='none'
+	}
 })
 
 socket.on('open_page', function(games,players,user,paswrd,buy_card,n){
@@ -297,7 +300,7 @@ socket.on('playing', function(data){
 			if(count==2){hand_waiting.textContent=data[2]['n_hand'][0]}
 		}
 		else{hand_waiting.textContent=data[2]['n_hand'][0]}
-		if (data[5].length===3){set_trick(data[2])		
+		if (data[5].length===3){set_trick(data[2])
 			setTimeout(()=>{let card;data[5].forEach(i=>{card=document.getElementById(i[1][3]);if(card){card.remove()}})},2000)
 		}
 	}

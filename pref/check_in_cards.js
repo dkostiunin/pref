@@ -4,8 +4,8 @@ function b_game(){ //нажатие кнопки запомнить или по�
 		if (but_name.textContent==='Запомнить мое имя'){socket.emit('check_in', input_name.value, but_name.textContent)}
 		else if (but_name.textContent==='Сменить свое имя'&&data_from_cookie('user=')!==input_name.value){
 			let old_name=data_from_cookie('user='), passw=data_from_cookie('pswd=')	
-			socket.emit('check_in', [input_name.value, old_name, passw], but_name.textContent)			
-		} 		
+			socket.emit('check_in', [input_name.value, old_name, passw], but_name.textContent)
+		}
 	}
 }
 const simbols=[' ','/','\\','.','[',']','^','$','(',')','?',':','*','+','=','!','<','>','|','{','}',',',';','-','"',"`","'"]
@@ -23,7 +23,6 @@ function but_pass(){
 function look_pas(){let passw=data_from_cookie('pswd=');socket.emit('check_in', passw, 'Посмотреть пароль')}
 
 socket.on('check_in', function(games,players,user){
-	console.log(games, players, user)
 	let p1=document.getElementById('input_name'),butt=document.getElementById('join_game'), but_name=document.getElementById('but_name')
 	if ((games==='Запомнить мое имя'||games==='Ввести пароль')&&players!=='enter_pass'){
 		let p=document.getElementById('pass_inf');if(p){p.remove()};
@@ -57,4 +56,5 @@ socket.on('check_in', function(games,players,user){
 			pass_inf.insertAdjacentHTML('afterbegin',`<p style="text-align:center">Новый пароль - ${players[1]}</p>`)
 			}
 	}
+	if (data_from_cookie('user=')){chat_all.style.display='block'}
 })
